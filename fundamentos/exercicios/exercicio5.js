@@ -6,7 +6,18 @@ e vice versa. Com isso, vamos fazer um exercício simples para mostrar dinheiro 
 da forma correta. Desenvolva uma função JavaScript para que ela receba um valor como
 0.30000000000000004 e retorne R$0,30 (observe a vírgula e o ponto).*/
 
-const a = 0.1
+const a = 1.000000001
 const b = 0.2
-let soma = 0.1 + 0.2
-console.log('R$ '+ soma.toFixed(2).replace('.', ','))
+
+const somar = (a, b) => {
+    return (a + b).toFixed(2).replace('.', ',')
+
+}
+let soma = a + b
+console.log("R$ ", somar(0.1, 0.30))
+
+console.log("R$ ", somar(0.8, 0.50))
+
+console.log("R$ ", somar(0.4, 0.29))
+
+console.log('R$ ', somar (0.2, 0.8) )

@@ -7,3 +7,4 @@ reprovação do aluno. Por exemplo, a nota 84 será arredondada para 85, mas a n
 arredondada por ser abaixo de 40 e não ser possível arredondamento eficiente, ou seja, que evite
 a reprovação do aluno. No caso de a nota ser 38, o arredondamento é possível pois atingirá 40
 e o aluno será aprovado. */
+
