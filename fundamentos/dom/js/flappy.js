@@ -92,6 +92,7 @@ function Barreiras(altura, largura, abertura, espaco, notificarPonto){
             }
         }
     }
+    this.setY(alturaJogo / 2)
 }
 
 const barreiras = new Barreiras(700, 1200, 200, 400)
