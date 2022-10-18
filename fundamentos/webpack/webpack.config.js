@@ -4,6 +4,7 @@ module.exports = {
     mode: 'development',
     entry: './src/principal.js',
     output: {
-        filename: 'principal.js'
+        filename: 'principal.js',
+        path: __dirname +'/public'
     }
 }
