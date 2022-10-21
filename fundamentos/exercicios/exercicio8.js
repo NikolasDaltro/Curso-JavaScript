@@ -8,3 +8,19 @@ O primeiro jogo não conta como novo recorde do melhor.
 Exemplo: String: “10 20 20 8 25 3 0 30 1”
 Retorno: [3, 7] (Significa que ele bateu três vezes seu recorde de melhor pontuação e a pior 
 pontuação aconteceu no sétimo jogo.*/
+
+function bhaskara (ax2, bx, c) {
+    let resultados = []
+    let delta = (bx ** 2) - (4 * ax2 * c)
+    if(delta < 0){
+        return "Delta é negativo"
+    } 
+    let x1 = (-bx + Math.sqrt(delta))/(2*ax2)
+    let x2 = (-bx - Math.sqrt(delta))/(2*ax2)
+    resultados.push(x1)
+    resultados.push(x2)
+    return resultados   
+}
+
+console.log(bhaskara(1, 3, 2))
+console.log(bhaskara(3, 1, 2))
