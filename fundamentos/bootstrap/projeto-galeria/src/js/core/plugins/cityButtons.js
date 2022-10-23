@@ -1,5 +1,7 @@
 import $ from 'jquery'
 
+import { onloadHtmlSuccess} from '../includes'
+
 const duration = 600
 
 function filterByCity(city){
@@ -42,4 +44,7 @@ btnGroup.append(btns)
 $(this).html(btnGroup)
 return(this)
 }
-const cityButtons = $('[wm-city-buttons]')
+onloadHtmlSuccess(function(){
+    $('[wm-city-buttons]').cityButtons()
+})
+
