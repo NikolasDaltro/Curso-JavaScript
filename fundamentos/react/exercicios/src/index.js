@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 
-const elemento = <h1>React</h1>
+import Primeiro from './componentes/Primeiro'
 
-ReactDom.render(elemento, document.getElementById('root'))
+ReactDom.render(<Primeiro />, document.getElementById('root'))
