@@ -1,6 +1,12 @@
+import { divide } from 'lodash'
 import React from 'react'
 import ReactDom from 'react-dom'
 
-import BomDia from './componentes/BomDia'
+import Multi,{BoaNoite} from './componentes/Multiplos'
 
-ReactDom.render(<BomDia nome="Nikolas"/>, document.getElementById('root'))
+ReactDom.render(
+    <div>
+    <Multi.BoaTarde nome="Nikolas"/>
+    <BoaNoite nome="Mônica"/>
+    </div>
+    , document.getElementById('root'))
